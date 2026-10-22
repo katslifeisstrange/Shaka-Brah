@@ -2,13 +2,31 @@
 <html>
 
   <body style="background-image: url(images/wp3994596-polka-dots-wallpapers.png); background-size: cover; font-family: sans-serif">
-    <div style="border: solid; width: 400px; border-radius: 18px; padding: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
-        <h1 style="color: #4F3B39">Welcome to Kat's OS</h1>
-      <div style="display: flex; justify-content: space-between;">
-        <p>Shaka-Brah! Welcome to my Website. I'm Kat, 6teen. I love coding and astrophysics.</p>
-        <img style="width: 128px; border-radius: 8px; object-fit: cover;" src="images/hatsumomo.jpg" />
+    
+      <div style="border: solid; width: 450px; border-radius: 18px; padding: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff;">
+        <h2 style="color: #4F3B39">Shaka-Brah!</h2>
+
+        <div style="display: flex; justify-content: space-between;">
+          <p>You made it to my Web OS, Welcome! I'm Kat, 6teen. Here are some quick facts about me: I love astrophysics. I believe in the power of the moon. I love animals and powdery scents. I like to go on walks alone. Here's the link to my <a href="https://github.com/katslifeisstrange">Github</a> account. Blow the candle and make a wish! MAGIC is real... ₊ ˚. 🕯️ ⊹₊ ⋆ </p>
+          <img style="width: 128px; border-radius: 8px; object-fit: cover;" src="images/hatsumomo.jpg" />
+        </div>
+
       </div>
-    </div>
+
+      <div style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.2); color: #fff;display: flex; justify-content: space-between;">
+        <p style="background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px; margin-left: 16px;">NincikOS</p>
+        <p id="timeElement" style="background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px; margin-right: 16px;">Time</p>
+
+      </div>
+
+      <script>
+        function updateTime() {
+          var currentTime = new Date().toLocaleString();
+          var timeText = document.querySelector("#timeElement");
+          timeText.innerHTML = currentTime }
+        setInterval(updateTime, 1000);
+      </script>
+
   </body>
 
 </html>
