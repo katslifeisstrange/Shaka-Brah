@@ -3,7 +3,8 @@
 
   <body style="background-image: url(images/wp3994596-polka-dots-wallpapers.png); background-size: cover; font-family: sans-serif">
     
-      <div style="border: solid; width: 450px; border-radius: 18px; padding: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #FAF2F3;">
+      //window 1(welcome)
+      <div id="welcome" style="border: solid; width: 450px; border-radius: 18px; padding: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #FAF2F3;">
         <h2 style="color: #4F3B39">Shaka-Brah!</h2>
 
         <div style="display: flex; justify-content: space-between;">
@@ -13,17 +14,20 @@
 
       </div>
 
+      //tab at the top
       <div style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.2); color: #fff;display: flex; justify-content: space-between;">
         <p style="background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px; margin-left: 16px;">NincikOS</p>
         <p id="timeElement" style="background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px; margin-right: 16px;">Time</p>
 
       </div>
-
+    
+      //window 2
       <div style="border: solid; width: 200px; border-radius: 18px; padding: 8px; position: absolute; top: 75%; left: 90%; transform: translate(-50%, -50%); background: #FAF2F3;">
         <img style="width: 200px; border-radius: 8px; object-fit: cover;" src="images/tiger.jpg"/>
         <p>The Tiger is my Chinese zodiac sign!</p>
       </div>
 
+      //time function for tab
       <script>
         function updateTime() {
           var currentTime = new Date().toLocaleString();
@@ -31,6 +35,8 @@
           timeText.innerHTML = currentTime }
         setInterval(updateTime, 1000);
       </script>
+
+    <script src="script.js"></script>
 
   </body>
 
